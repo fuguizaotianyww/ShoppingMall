@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:id="@+id/goods_image"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:orientation="vertical"
+        android:layout_toRightOf="@id/goods_image">
+        <RelativeLayout
+            android:layout_width="300dp"
+            android:layout_height="40dp">
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:text="商品名称："
+                android:textSize="15dp"
+
+                android:id="@+id/name"/>
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:layout_toRightOf="@id/name"
+                android:id="@+id/goods_name"
+
+                android:textSize="15dp"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="300dp"
+            android:layout_height="40dp">
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:id="@+id/value"
+                android:text="商品价格："
+
+                android:textSize="15dp"/>
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:id="@+id/goods_value"
+                android:layout_toRightOf="@id/value"
+                android:textSize="15dp"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="300dp"
+            android:layout_height="40dp">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:id="@+id/ins"
+                android:textSize="15dp"
+
+                android:text="商品简介："/>
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:id="@+id/goods_ins"
+                android:layout_toRightOf="@id/ins"
+
+                android:textSize="15dp"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+</RelativeLayout>

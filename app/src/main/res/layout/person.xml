@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:orientation="vertical"
+         android:background="#F0F3F6"
+          >
+
+
+         <LinearLayout style="@style/wrap_layout" >
+         <!-- 上圆角-->
+         <LinearLayout style="@style/top_layout">
+                 <TextView style="@style/usertext" android:text="我的账户" />
+                   <ImageView style="@style/img_arrow"/>
+             </LinearLayout>
+
+         <!-- 分割线 -->
+           <View style="@style/bg_line"/>
+           <!-- 无圆角-->
+        <LinearLayout style="@style/mid_layout">
+
+                 <TextView style="@style/usertext" android:text="我的订单"
+                     android:id="@+id/myorder"/>
+                   <ImageView style="@style/img_arrow"/>
+             </LinearLayout>
+              <View style="@style/bg_line"/>
+           <!-- 下圆角-->
+        <LinearLayout style="@style/bottom_layout">
+                 <TextView style="@style/usertext" android:text="消息通知" />
+                   <ImageView style="@style/img_arrow"/>
+             </LinearLayout>
+     </LinearLayout>
+
+          <!-- 全圆角-->
+         <LinearLayout style="@style/wrap_layout">
+         <LinearLayout style="@style/single_layout">
+                <TextView style="@style/usertext" android:text="辅助功能"/>
+                 <ImageView style="@style/img_arrow"/>
+             </LinearLayout>
+
+     </LinearLayout>
+
+</LinearLayout>

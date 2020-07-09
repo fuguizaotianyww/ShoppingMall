@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity"
+    android:paddingRight="30dp"
+    android:background="@mipmap/timge"
+    android:gravity="center"
+    android:paddingLeft="30dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/cen"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp"
+        android:orientation="vertical">
+   <EditText
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="30dp"
+       android:id="@+id/user"
+       android:hint="请输入用户名"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:hint="请输入密码"
+        android:id="@+id/psd"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/res"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/cen"
+        android:text="提交"
+        android:background="@drawable/background_button_div"
+        android:textSize="15dp"/>
+</LinearLayout>
