@@ -204,7 +204,6 @@ public class CartFragment extends Fragment {
             cartlistView.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
                 @Override
                 public boolean onItemLongClick(AdapterView<?> parent, View view, final int position, long id) {
-                    Log.d("123456789", "onItemClick: "+"12345678945612313248679845612345687");
                     AlertDialog.Builder dialog = new AlertDialog.Builder(getActivity());
                     dialog.setTitle("移出购物车");
                     dialog.setMessage("是否将此商品移出购物车？");

@@ -111,4 +111,15 @@ public class HttpUtil {
                 .build();
         client.newCall(request).enqueue(callback);
     }
+    public static void deleteOrderWithOkhttp(String url,String orderId,okhttp3.Callback callback){
+        OkHttpClient client = new OkHttpClient();
+        RequestBody body = new FormBody.Builder()
+                .add("orderid",orderId)
+                .build();
+        Request request = new Request.Builder()
+                .url(url)
+                .post(body)
+                .build();
+        client.newCall(request).enqueue(callback);
+    }
 }

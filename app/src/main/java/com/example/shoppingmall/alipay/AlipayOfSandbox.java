@@ -66,9 +66,9 @@ public class AlipayOfSandbox extends AppCompatActivity {
 	 * 	建议使用支付宝提供的公私钥生成工具生成和获取 RSA2_PRIVATE。
 	 * 	工具地址：https://doc.open.alipay.com/docs/doc.htm?treeId=291&articleId=106097&docType=1
 	 */
-	public static final String RSA2_PRIVATE = "MIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCY21zrH5kwfCnkFiS4gFvgtJKOrTfGp+UkZmTFnSxypgTcCg4UW8aC4PUVTS+K3kQw2Do0rs9FxWqK85ZsImmORYNqW7zeVmFLuz0sv1clstVApRGPLBaVsyG5rGYimO+VWuniFfoblpLWxoiaRzJZkkdpMDoC1WPmzfMiS8GaMyQeIMAqv4gjlPew1zcALM+DvUOkrl3ZqsuLfe0rhFQFThffA8oI5bI2MjQ1G/KHjTY+Sv920f0BkEupNbLTp6YLRKbrj1XpxTcqbeM/6Mmu6/4gKZ9VVNGXznt9eBVi2ArsXz8m7gYtK+Lt03D9ruUr7eNjkFpcuLuX3P1cFs3ZAgMBAAECggEACVuEeLBahGlVdy0T2mehOERVpH5eJ78ne+74xFA25F3ddkr3Sa/Em0aCOmebPXkV25ehGJCLB85qE0+OKdiBdcAzp1MuYL4Q/r3bpN2hzCEChQ6V4JnmWAu7SM6RAhUytYX3Q2vs/7tcCeHlguxQ3MLjtEDLjFjb4MlC1RqmI3ZdGYpXwWldvIhl2SToLVB5JjiRaM7t9R+nNJpr8KQ4akS/3Ld490B8u5gqCj6zTZCe1xDoKLDHVXVzmuvCdtox0cgkiTBQhTHLn1IaR7d23KSksR9+2WOvr+mmuR26obD8oi8finP1/ydJsRWmq8QAmsbM4ygh6A4mU8RK/UB2MQKBgQD7NDn4RSiwYePArAGSdvXE+5cT8V7L9sicW9AT8BzTTbEmQlnO7pZuRo72o3MHbcmSyrcH3ysowSZzd7XjkPr39VB/wYhoxcmRxHCi8eZu7HZ2Hxx8A32IzN4ItbUJG4MBOkQK39PvT1dvqW1jZnLKXI2mF4HZQZ5l7p9t8saISwKBgQCbxnWhHeyn6BiwKCLk9/H4flc3A7AgjxBcWKsBnmzLmOkfdekr7xUSq7AnNbpuRi4Lm2kjIrHNeQZ9j7ijct8sbaENz56ugwmhwP9yNu1Cwr70HFl0bX/s7xjcx/0Akyk+lQZrkCF2YXLllqBDGX0qdQ+bWoo5oNeRAiZpyxpz6wKBgAuIlVTJ0BlxFSTmgNf5sEUQDBq1TVXuCb3sFTylHJ2zBnwsNbVjjPKZOL0oOgLQTp33wrmQzIl9fMd2app9MJir4btL5nhxBFU2ALnqg1r6bmH0AbnL6zqZtWQO+7XkVnp6817QcgmdyfTtgYE71e9mmnZSw/p2odAqSZWhvO3LAoGAZ9jUDkbOv9jgrH71VENfElPXfJt+zRXSyF1sEzY0PT6BGzIV8e3+1GWUl28gC+fJRn+ihYPZmKs4AnjPlFc+JHYpSfXBSYGd6DGrmc64OStu9Xn4wL9G6wMyRe0k4z833bqnfwmk5TBt0lSqHlFdufI0J1Milux9CPSv+xMlXWUCgYEA8sRAWB4L+WTwMzGbqVk2aaTIRdTT8LnHfsp0SuThLgh1gvhx//DW6FM7ZMaxcog4rV3l7p1wjhJIN5nIlJFslEuyXakvOuPlrq1vVvoVmlQo+8ykKQxb+kTvodk62R/qGkvs+X7dE6R8EjHlv4mS4Q2Km7lhMQ1tytm0scmsaFQ=";
+	public static final String RSA2_PRIVATE = "MIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDD8fQ3trE8rTyZ5ppO5mlEobHC9PmMLcM2WMEIkunyCHx8QwceNNgkQ26C/SZeS9aNupHq5FDrMGs7t8ME7zZb8mVff3KROGDdJ5i1Am/QXpGwnFbdcT2OGLNKgLySeCpPSJr+8bJpw2v7jJc3iV7srMEDCtd0ZATbgUU1NfKrX2jIEff2Q5jyeoBGgizQ8081NsFUgW33sMY21LtaUKKSBk0SuSuNM7wTIEmmlFR0KznPwjWRDycSb1iUcK+8dSklKbhM7xQgFhTKFcRguYchyV/xy+Zf37fhoPdH16YmLeRQKTy4ejKxjNBBM2fYX7mUVGxr8vP5U7mb7mgrPQHlAgMBAAECggEAXJt37vT7Y1AE+j/Q4kVnrzY0i424e5YNUxwzb1fwFaIJI7mSHaagGNN94Y6/mYWCS83HtRpfXCiwJbM+CpD8QgyX+MCFZzkcHqneNH6IVhS8Cpp5O4OPsh7ebfHWLet5I6uPBbs5tV7VJDhYJ7lXEci8GDIBjlLPMOcxzGpI3NEPZUYcFlySIrYBFIpDvGS+EPPOSt5YM+U07iL7i2WOGzF7P1PAm2ULA+sXDoPZs8k8UN/BQIau4n7XCiisfdbbInBPQtYWI9IcYFtD03rgJD1HLTl2OyQIRF9mrMm9TxAmq4D/bvyL7yWBTeA7BxQ2PLGksNYvvnNQbyCgFhA+6QKBgQD/s8gqeh0jV3BtisLE7k739CdGz+GnmS7dT3r015kjcS2BZ68IVcyrzVMMm7lLfEK62NLMO1mK5XO/Xd6mPT7TpZtsvhNchPlnp8OBNHazYRyiNK/L8GjdqXvxZ1kRHfSqUvhgTzSHASKVq5rjaEKvD2+h1xDS7EAqdjHn3dV8awKBgQDELFwsOyHgYPfkVEZ8k0+BTxhxr3srKsYBq8s5MUwnqXRBq0d/WFmJ5HSppdEZRRyuKCT3tI8d2AEfk8TYTKcCybsC4fn5vkCxizDJo2MMGBtQq28WnKvvZBFLRK3oHyvwSN4vzh8uZPGSnJeAZNAuqahL8PsvC/XMQVDuNGAO7wKBgQCHEjXrUkQwFhFanBEUq/nk+wEAY/GEceOSnliKG5VWZoOuNtH76i7KlhSHtX7lBAfP4ZdAsR00xM4myXRChlm4vWNjxug9WDTS74jTqJ4HVYYlnQU8Couqg8voEjq3UwaaLmfroAtUQWI+g762361SAipq6EuHz6p5g6QLImCSbwKBgHtmUCC+naOwO58UaDZqz8NOhtjUgsz3nhBlCXQTj40PagL5BAOWBtTXsY8ZsDuOHulqdT6gBLrIKoS7hkJtjU0SqqG4lm9D/xvvq6PbNC3iaCRJgpqduQXgU4SeUirGmPQQUjuOFE0x0EfiWua4A8CmligXEVpZ0qdGmusMZTRfAoGBAMOmtwoXRn7eV6hDUu8tECT27lARy7VbWekfU4d/7FGsHIW9VZgZBTebdX8d/gM5ye0UKYqrkAclGn/RDRBoT219Zw5nALOSjojNYTOh7sx9UT04+bw07tuV9sjbwupuCg1o2dSq+4SLOzvpNJSZ5pqrfvU7MwKOoXlVVfYs4BT+";
 	public static final String RSA_PRIVATE = "";
-	private String total_price,orderNo;
+	private String total_price,total_id;
 	private static final int SDK_PAY_FLAG = 1;
 	private static final int SDK_AUTH_FLAG = 2;
 
@@ -93,8 +93,9 @@ public class AlipayOfSandbox extends AppCompatActivity {
 					Bundle bundle = new Bundle();
 					bundle.putString("payResult",resultInfo);
 					bundle.putString("resultStates",resultStatus);
+					bundle.putString("orderid",total_id);
 					intent.putExtras(bundle);
-					setResult(1,intent);
+					setResult(11111,intent);
 					finish();
 				} else {
 					// 该笔订单真实的支付结果，需要依赖服务端的异步通知。
@@ -131,7 +132,8 @@ public class AlipayOfSandbox extends AppCompatActivity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_alipay_of_sandbox);
 		total_price=(String)getIntent().getStringExtra("totalPrice");
-		orderNo=(String)getIntent().getStringExtra("orderNo");
+		total_id = getIntent().getStringExtra("orderId");
+
 	}
 
 	/**
@@ -151,7 +153,7 @@ public class AlipayOfSandbox extends AppCompatActivity {
 		 * orderInfo 的获取必须来自服务端；
 		 */
         boolean rsa2 = (RSA2_PRIVATE.length() > 0);
-		Map<String, String> params = OrderInfoUtil2_0.buildOrderParamMap(APPID, rsa2,total_price,orderNo);
+		Map<String, String> params = OrderInfoUtil2_0.buildOrderParamMap(APPID, rsa2,total_price);
 		String orderParam = OrderInfoUtil2_0.buildOrderParam(params);
 
 		String privateKey = rsa2 ? RSA2_PRIVATE : RSA_PRIVATE;

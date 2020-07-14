@@ -1,9 +1,8 @@
 package com.example.shoppingmall.Adapter;
 
+import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
-import android.os.Bundle;
-import android.os.Handler;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
@@ -17,8 +16,24 @@ import com.example.shoppingmall.entity.Order;
 import java.util.List;
 
 public class OrderAdapter extends BaseAdapter {
+
     List<Order> orderlist;
     private Context context;
+
+
+    private OnItemClickListener onItemClickListener;
+
+    public void setOnItemClickListener(OnItemClickListener onItemClickListener) {
+        this.onItemClickListener = onItemClickListener;
+    }
+
+
+
+    //点击事件接口回调
+    public interface OnItemClickListener {
+        void OnItemClick(View view, int position);
+    }
+
     public OrderAdapter(Context context, List<Order> list) {
         this.context = context;
         this.orderlist = list;
@@ -39,8 +54,11 @@ public class OrderAdapter extends BaseAdapter {
         return 0;
     }
 
+
+
+
     @Override
-    public View getView(int position, View convertView, ViewGroup parent) {
+    public View getView(final int position, View convertView, ViewGroup parent) {
         final ViewHolder holder;
         if(convertView == null){
             convertView = View.inflate(context,R.layout.order_list,null);
@@ -62,17 +80,10 @@ public class OrderAdapter extends BaseAdapter {
         holder.address.setText(orderlist.get(position).getAddress());
         holder.phone.setText(orderlist.get(position).getPhone());
         holder.orderstatus.setText(orderlist.get(position).getOrderState());
-        holder.pay.setOnClickListener(new View.OnClickListener() {
+        convertView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent1 = new Intent(context, AlipayOfSandbox.class);
-                Bundle bundle = new Bundle();
-                String totalprice = holder.orderprice.getText().toString();
-                String orderNo = holder.orderid.getText().toString();
-                bundle.putString("totalPrice",totalprice);
-                bundle.putString("orderNo",orderNo);
-                intent1.putExtras(bundle);
-                context.startActivity(intent1);
+                onItemClickListener.OnItemClick(v,position);
             }
         });
         return convertView;

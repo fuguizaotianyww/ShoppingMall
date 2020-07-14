@@ -18,15 +18,17 @@
         <activity android:name=".RegisterActivity" />
         <activity android:name=".alipay.AlipayOfSandbox" />
         <activity android:name=".alipay.H5PayDemoActivity" />
-        <activity android:name=".LoginActivity" />
-        <activity
-            android:name=".MainActivity"
-            android:windowSoftInputMode="adjustPan">
+        <activity android:name=".LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:windowSoftInputMode="adjustPan">
+
         </activity>
     </application>
 

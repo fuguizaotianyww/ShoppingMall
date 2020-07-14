@@ -23,13 +23,14 @@
                 android:textSize="15dp"
 
                 android:id="@+id/name"/>
+
             <TextView
+                android:id="@+id/goods_name"
                 android:layout_width="150dp"
                 android:layout_height="40dp"
                 android:layout_toRightOf="@id/name"
-                android:id="@+id/goods_name"
 
-                android:textSize="15dp"/>
+                android:textSize="15dp" />
         </RelativeLayout>
         <RelativeLayout
             android:layout_width="300dp"
